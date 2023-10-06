@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M_05_TabliczkaMnozenia.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            >
+            <HorizontalStackLayout 
+                HorizontalOptions="Center"
+                Spacing="10">
+                <Label
+                    Text="Podal rozmiar:"
+                    FontSize="32"
+                    />
+                <Entry
+                    x:Name="entRozmiar"
+                    Text="1"
+                    FontSize="32"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout 
+                HorizontalOptions="Center"
+                Spacing="10">
+                <Button
+                    Text="Generuj"
+                    Clicked="btnGenerujClicked"
+                    />
+                <Button
+                    Text="Reset"
+                    Clicked="btnResetClicked"
+                    />
+            </HorizontalStackLayout>
+
+            <Label
+                Text="Tabliczka mnożenia"
+                HorizontalOptions="Center"
+                x:Name="lblTabliczka"
+                FontSize="24"
+                />
+
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
